@@ -4,43 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ══ SEO Meta Tags ══ -->
   <title>AAA Gas Engineering — Pakistan's Trusted LPG Equipment Manufacturer</title>
   <meta name="description" content="AAA Gas Engineering manufactures LPG vaporizers, valves, regulators and cylinders in Gujranwala, Pakistan. ISO certified, OGRA approved. Branch of Major Enterprises since 1995.">
   <meta name="keywords" content="LPG equipment Pakistan, LPG vaporizer, LPG valves, LPG regulator, LPG cylinder manufacturer, Gujranwala, OGRA approved">
 
-  <!-- ══ Open Graph (WhatsApp / Social preview) ══ -->
   <meta property="og:title" content="AAA Gas Engineering — LPG Equipment Manufacturer">
   <meta property="og:description" content="Pakistan's trusted LPG equipment manufacturer. ISO certified, OGRA approved. Serving industry since 1995.">
   <meta property="og:image" content="images/og-preview.jpg">
   <meta property="og:type" content="website">
 
-  <!-- ══ Fonts ══ -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- ══ Main Stylesheet ══ -->
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- ══ Favicon (put your logo as favicon.ico in root folder) ══ -->
-  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
 </head>
 <body>
 
-
-  <!-- ════════════════════════════════════════════════════
-       NAVIGATION
-       File: index.html — nav section
-  ════════════════════════════════════════════════════ -->
-  <nav>
+  <!-- ═══════════════════════════ NAVIGATION ═══════════════════════════ -->
+  <nav id="main-nav">
     <a href="#" class="nav-logo">
       <div class="logo-icon">
-        <div class="logo-icon">
-  <img src="images/logo.png" alt="AAA Gas Engineering Logo">
-</div>
+        <img src="images/logo.png" alt="AAA Gas Engineering Logo">
       </div>
       <div class="logo-text">
         <strong>AAA Gas Engineering</strong>
-        <strong>Project OF Major Enterprises </strong>
+        <span>Project of Major Enterprises</span>
       </div>
     </a>
 
@@ -52,18 +39,28 @@
     </ul>
 
     <a href="#contact" class="nav-cta">Get a Quote</a>
+
+    <!-- Mobile hamburger -->
+    <button class="hamburger" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
+
+  <!-- Mobile dropdown menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="mobile-cta">Get a Quote</a>
+  </div>
   <!-- END NAVIGATION -->
 
 
-  <!-- ════════════════════════════════════════════════════
-       HERO SECTION
-       File: index.html — hero section
-       Background image: images/hero-bg.jpg
-  ════════════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
   <section class="hero">
-
-    <!-- REPLACE: add factory/product background image here -->
     <div class="hero-bg-image"></div>
     <div class="hero-bg-gradient"></div>
     <div class="hero-grid"></div>
@@ -94,58 +91,43 @@
       </div>
     </div>
 
-    <!-- Stats bottom right -->
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-num"><span data-count="30">30</span><span>+</span></div>
+        <div class="stat-num"><span data-count="30">0</span><span>+</span></div>
         <div class="stat-label">Years Experience</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <div class="stat-num"><span data-count="5000+">5000+</span><span>+</span></div>
+        <div class="stat-num"><span data-count="5000">0</span><span>+</span></div>
         <div class="stat-label">Clients Served</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <div class="stat-num"><span data-count="4">4</span><span>+</span></div>
+        <div class="stat-num"><span data-count="4">0</span><span>+</span></div>
         <div class="stat-label">Certifications</div>
       </div>
     </div>
-
   </section>
   <!-- END HERO -->
 
 
-  <!-- ════════════════════════════════════════════════════
-       CERTIFICATIONS BAR
-       Images: images/certifications/ folder
-  ════════════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════ CERT BAR ═══════════════════════════ -->
   <div class="cert-bar">
     <span class="cert-label">Certified By</span>
-
-    <!-- OPTIONAL: replace text with cert logo images -->
-    <!-- <span class="cert-badge"><img src="images/certifications/iso.png" alt="ISO"> ISO Certified</span> -->
     <span class="cert-badge">ISO Certified</span>
     <span class="cert-badge">OGRA Approved</span>
     <span class="cert-badge">PEC Registered</span>
     <span class="cert-badge">Chamber of Commerce</span>
-
     <span class="branch-note">A branch of Major Enterprises — LPG solutions since 1995</span>
   </div>
-  <!-- END CERT BAR -->
 
 
-  <!-- ════════════════════════════════════════════════════
-       ABOUT SECTION
-       Image: images/factory/factory1.jpg  (company/factory photo)
-  ════════════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
   <section class="about" id="about">
     <div class="about-grid">
 
-      <!-- Left: Visual card -->
       <div class="about-visual">
-      
-       <img src="images/factory/factory1.png" alt="AAA Gas Engineering Factory" class="about-visual-img">
+        <img src="images/factory/factory1.png" alt="AAA Gas Engineering Factory" class="about-visual-img">
         <div class="about-visual-overlay">
           <div class="about-fact">
             <div class="about-fact-num">1995</div>
@@ -163,7 +145,6 @@
         <div class="about-year">30</div>
       </div>
 
-      <!-- Right: Text content -->
       <div class="about-text">
         <div class="section-tag">About Us</div>
         <h2 class="section-title">Engineering Trust<br>Since 1995</h2>
@@ -195,15 +176,7 @@
   <!-- END ABOUT -->
 
 
-  <!-- ════════════════════════════════════════════════════
-       PRODUCTS SECTION
-       Images folder: images/products/
-       - vaporizer.jpg
-       - valves.jpg
-       - lot-valves.jpg
-       - regulators.jpg
-       - cylinders.jpg
-  ════════════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════ PRODUCTS CAROUSEL ═══════════════════════════ -->
   <section class="products" id="products">
     <div class="section-tag">Our Products</div>
     <h2 class="section-title">LPG Equipment Range</h2>
@@ -212,98 +185,111 @@
       All products are OGRA approved and ISO certified.
     </p>
 
-    <div class="products-grid">
+    <!-- Carousel wrapper -->
+    <div class="carousel-container">
+      <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Previous">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
 
-      <!-- Product 1: LPG Vaporizers -->
-      <div class="product-card">
-        <!-- REPLACE emoji with real product image -->
-        <div class="product-img-wrapper">
-          <img src="images/products/vaporizer.png" alt="LPG Vaporizer" loading="lazy">
-        </div> 
-        
-        <div class="product-body">
-          <div class="product-name">LPG Vaporizers</div>
-          <div class="product-desc">
-            High-efficiency LPG vaporizers designed for industrial and commercial
-            applications. Built for maximum safety and performance under demanding conditions.
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track" id="carousel-track">
+
+          <!-- Card 1 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/products/vaporizer.png" alt="LPG Vaporizer" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-badge">Best Seller</div>
+              <div class="product-name">LPG Vaporizers</div>
+              <div class="product-desc">
+                High-efficiency LPG vaporizers designed for industrial and commercial
+                applications. Built for maximum safety and performance under demanding conditions.
+              </div>
+              <a href="#contact" class="product-inquiry">Request Quote</a>
+            </div>
           </div>
-          <a href="#contact" class="product-inquiry">Request Quote</a>
-        </div>
+
+          <!-- Card 2 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/products/valves.png" alt="Cylinder Valves" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-name">Cylinder Valves</div>
+              <div class="product-desc">
+                Full range of industrial valves for LPG systems including ball valves,
+                check valves, and safety relief valves — engineered for durability and precision.
+              </div>
+              <a href="#contact" class="product-inquiry">Request Quote</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/products/regulators.png" alt="LPG Regulators" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-name">LPG Regulators</div>
+              <div class="product-desc">
+                Precision pressure regulators for domestic, commercial, and industrial LPG
+                applications. OGRA approved and tested for consistent pressure control.
+              </div>
+              <a href="#contact" class="product-inquiry">Request Quote</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/products/Cylinders.png" alt="LPG Cylinders" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-name">LPG Cylinders</div>
+              <div class="product-desc">
+                Heavy-duty LPG cylinders manufactured under strict quality controls.
+                Available in multiple sizes for residential, commercial, and industrial use.
+              </div>
+              <a href="#contact" class="product-inquiry">Request Quote</a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="images/products/Custom Solutions.png" alt="Custom Solutions" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-name">Custom Solutions</div>
+              <div class="product-desc">
+                Can't find what you need? We engineer custom LPG equipment solutions
+                tailored to your specific industrial requirements and safety specifications.
+              </div>
+              <a href="#contact" class="product-inquiry">Discuss Project</a>
+            </div>
+          </div>
+
+        </div><!-- end carousel-track -->
       </div>
 
-      <!-- Product 2: Industrial Valves -->
-      <div class="product-card">
-        <div class="product-img-wrapper">
-          <img src="images/products/valves.png" alt="Industrial Valves" loading="lazy">
-        </div>
-       
-        <div class="product-body">
-          <div class="product-name">Cylinder Valves </div>
-          <div class="product-desc">
-            Full range of industrial valves for LPG systems including ball valves,
-            check valves, and safety relief valves — engineered for durability and precision.
-          </div>
-          <a href="#contact" class="product-inquiry">Request Quote</a>
-        </div>
-      </div>
-
-      
-
-      <!-- Product 4: Regulators -->
-      <div class="product-card">
-        <div class="product-img-wrapper">
-          <img src="images/products/regulators.png" alt="LPG Regulators" loading="lazy">
-        </div> 
-        
-        <div class="product-body">
-          <div class="product-name">LPG Regulators</div>
-          <div class="product-desc">
-            Precision pressure regulators for domestic, commercial, and industrial LPG
-            applications. OGRA approved and tested for consistent pressure control.
-          </div>
-          <a href="#contact" class="product-inquiry">Request Quote</a>
-        </div>
-      </div>
-
-      <!-- Product 5: Cylinders -->
-      <div class="product-card">
-         <div class="product-img-wrapper">
-          <img src="images/products/Cylinders.png" alt="LPG Cylinders" loading="lazy">
-        </div> 
-       
-        <div class="product-body">
-          <div class="product-name">LPG Cylinders</div>
-          <div class="product-desc">
-            Heavy-duty LPG cylinders manufactured under strict quality controls.
-            Available in multiple sizes for residential, commercial, and industrial use.
-          </div>
-          <a href="#contact" class="product-inquiry">Request Quote</a>
-        </div>
-      </div>
-
-      <!-- Product 6: Custom Solutions -->
-      <div class="product-card">
-           <div class="product-img-wrapper">
-          <img src="images/products/Custom Solutions.png" alt="LPG Cylinders" loading="lazy">
-        </div> 
-        <div class="product-body">
-          <div class="product-name">Custom Solutions</div>
-          <div class="product-desc">
-            Can't find what you need? We engineer custom LPG equipment solutions
-            tailored to your specific industrial requirements and safety specifications.
-          </div>
-          <a href="#contact" class="product-inquiry">Discuss Project</a>
-        </div>
-      </div>
-
+      <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Next">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
     </div>
+
+    <!-- Dots -->
+    <div class="carousel-dots" id="carousel-dots"></div>
+
   </section>
   <!-- END PRODUCTS -->
 
 
-  <!-- ════════════════════════════════════════════════════
-       WHY US SECTION
-  ════════════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════ WHY US ═══════════════════════════ -->
   <section class="why" id="why">
     <div class="section-tag">Why Choose Us</div>
     <h2 class="section-title">The AAA Advantage</h2>
@@ -359,9 +345,7 @@
   <!-- END WHY US -->
 
 
-  <!-- ════════════════════════════════════════════════════
-       CONTACT SECTION
-  ════════════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
   <section class="contact" id="contact">
     <div class="section-tag">Get In Touch</div>
     <h2 class="section-title">Request a Quote</h2>
@@ -372,7 +356,6 @@
 
     <div class="contact-grid">
 
-      <!-- Left: Contact Info -->
       <div class="contact-info">
         <h3>Contact Information</h3>
 
@@ -381,7 +364,7 @@
           <div>
             <div class="contact-item-label">Phone / WhatsApp</div>
             <div class="contact-item-val">+92 320 791 3535</div>
-            <div style="margin-top:8px">
+            <div style="margin-top:10px">
               <a href="https://wa.me/923207913535" target="_blank" class="btn-whatsapp"
                  style="padding:8px 18px;font-size:13px">WhatsApp Now</a>
             </div>
@@ -413,7 +396,6 @@
         </div>
       </div>
 
-      <!-- Right: Inquiry Form -->
       <form class="contact-form">
         <div class="form-row">
           <div class="form-group">
@@ -442,8 +424,7 @@
           <select id="product" name="product">
             <option value="">Select a product...</option>
             <option value="vaporizer">LPG Vaporizers</option>
-            <option value="valves">Industrial Valves</option>
-            <option value="lot-valves">LOT Valves</option>
+            <option value="valves">Cylinder Valves</option>
             <option value="regulators">LPG Regulators</option>
             <option value="cylinders">LPG Cylinders</option>
             <option value="custom">Custom Solution</option>
@@ -464,9 +445,7 @@
   <!-- END CONTACT -->
 
 
-  <!-- ════════════════════════════════════════════════════
-       FOOTER
-  ════════════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
   <footer>
     <div class="footer-top">
 
@@ -479,8 +458,7 @@
         <h4>Products</h4>
         <ul>
           <li><a href="#products">LPG Vaporizers</a></li>
-          <li><a href="#products">Industrial Valves</a></li>
-          <li><a href="#products">LOT Valves</a></li>
+          <li><a href="#products">Cylinder Valves</a></li>
           <li><a href="#products">Regulators</a></li>
           <li><a href="#products">LPG Cylinders</a></li>
         </ul>
@@ -508,31 +486,24 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2025 AAA Gas Engineering. A branch of Major Enterprises.</span>
+      <span>© 2025–2026 AAA Gas Engineering. A branch of Major Enterprises.</span>
       <span>Gujranwala, Punjab, Pakistan</span>
     </div>
   </footer>
-  <!-- END FOOTER -->
 
 
-  <!-- ════════════════════════════════════════════════════
-       FLOATING WHATSAPP BUTTON
-  ════════════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════ FLOATING WHATSAPP ═══════════════════════════ -->
   <a href="https://wa.me/923207913535" target="_blank" class="float-wa" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
   </a>
-  <!-- END FLOATING BUTTON -->
 
 
-  <!-- ════════════════════════════════════════════════════
-       JAVASCRIPT FILES
-       Load order matters — nav first, then animations, then form
-  ════════════════════════════════════════════════════ -->
   <script src="js/nav.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/form.js"></script>
+  <script src="js/carousel.js"></script>
 
 </body>
 </html>
