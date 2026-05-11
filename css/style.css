@@ -1246,7 +1246,7 @@ footer {
 
   /* Hero */
   .hero {
-    padding: 100px 5% 300px;
+    padding: 100px 5% 200px;
     justify-content: flex-start;
   }
 
@@ -1258,11 +1258,7 @@ footer {
   }
 
   /* Keep text readable over image at bottom */
-  .hero-bg-gradient {
-    background:
-      radial-gradient(ellipse 100% 50% at 50% 0%, rgba(11,28,53,1) 40%, rgba(11,28,53,0.5) 80%, transparent 100%),
-      radial-gradient(ellipse 100% 40% at 50% 100%, rgba(11,28,53,0.8) 0%, transparent 60%);
-  }
+  
 
   .hero h1 {
     font-size: clamp(36px, 10vw, 54px);
